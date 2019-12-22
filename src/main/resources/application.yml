@@ -11,7 +11,7 @@ spring:
     min-idle: 15
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: ${HIBERNATE_DLL_AUTO}
     properties:
       hibernate:
         #        dialect: org.hibernate.dialect.H2Dialect
