@@ -46,7 +46,7 @@ Method 2
 ```
 
 ## Requests examples
-###Get access & refresh token for a certain user (username: client@email.com; password: client123456789)
+### Get access & refresh token for a certain user (username: client@email.com; password: client123456789)
 ```shell script
 curl -X POST \
   'http://localhost:8080/oauth/token?grant_type=password&username=client%40email.com&password=client123456789' \
@@ -87,7 +87,7 @@ Response will be in this format:
     "client_id": "app"
 }
 ```
-## Request a new access token using the refresh token
+### Request a new access token using the refresh token
 ```shell script
 curl -X POST \
   'http://localhost:8080/oauth/token?grant_type=refresh_token&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzb3VyY2UiXSwidXNlcl9uYW1lIjoiY2xpZW50QGVtYWlsLmNvbSIsImRpc3BsYXlOYW1lIjoiY2xpZW50Iiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImF0aSI6ImYzMmJhZTQ3LTI0ZGItNDFlZi04ZmQ3LTU1NGE4N2RhYmM0NSIsImV4cCI6MTU3NzYxNjA2MywiYXV0aG9yaXRpZXMiOlsiUk9MRV9HVUVTVCJdLCJqdGkiOiI5ZDAyZWM3YS04ZjFjLTQxMDgtYjgxNS1iNGZhOTExYjEyODUiLCJjbGllbnRfaWQiOiJhcHAifQ.qJDfHdC2X1w_kvYXgBADFKOuNu1HZF8suhuhaYQAaOM&client_id=app&client_secret=secret' \
